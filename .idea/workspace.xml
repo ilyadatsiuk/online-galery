@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1843d40a-ba1f-4ddf-9db8-3c238a4f6e6f" name="Changes" comment="Testing FTP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/OnlineGalery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/OnlineGalery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ilya/onlinegalery/onlinegalery/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ilya/onlinegalery/onlinegalery/main-scene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,18 +74,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.OnlineGalery.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "test",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OnlineGalery.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -138,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705844215411</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Testing FTP">
+      <option name="closed" value="true" />
+      <created>1705844828105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705844828105</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

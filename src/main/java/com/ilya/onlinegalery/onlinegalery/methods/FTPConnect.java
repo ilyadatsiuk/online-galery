@@ -16,15 +16,17 @@ public class FTPConnect {
     public void connect(){
         FTPClient ftpClient = new FTPClient();
         try {
+            ftpClient.setControlEncoding("UTF-8");
             ftpClient.connect(ip_addres, ip_port);
             if(ftpClient.login(user, password)){
                 System.out.println("Logged in!");
                 ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
-                System.out.println("Current directory" + ftpClient.printWorkingDirectory());
+                System.out.println("Current directory: " + ftpClient.printWorkingDirectory());
+                ftpClient.enterLocalPassiveMode();
                 String[] files = ftpClient.listNames();
                 if(files != null){
                     System.out.print("Files in the current directory:");
-                    for (String file : files) {
+                    for (String file :   files) {
                         System.out.println(file);
                     }
                 } else {
@@ -32,6 +34,7 @@ public class FTPConnect {
                 }
                 ftpClient.logout();
                 ftpClient.disconnect();
+                System.out.println("Connection closed");
             } else {
                 System.out.println("Login failed");
             }

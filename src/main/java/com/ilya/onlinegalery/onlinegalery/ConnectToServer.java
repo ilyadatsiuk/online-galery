@@ -27,18 +27,26 @@ public class ConnectToServer {
         this.password = _password;
     }
 
-    private void main(){
-        switch (connect_method) {
-            case "ftp":
-                ftp_connect(this.ip_address, this.ip_port, this.user, this.password);
-            case "ssh":
-                ssh_connect(this.ip_address, this.ip_port, this.user, this.password);
-            case "web":
-                web_connect(this.ip_address, this.ip_port);
-            case "smb":
-                smb_connect(this.ip_address, this.ip_port, this.user, this.password);
-
+    public void start(){
+        if (this.connect_method != null){
+            switch (connect_method) {
+                case "ftp":
+                    ftp_connect(this.ip_address, this.ip_port, this.user, this.password);
+                    break;
+                case "ssh":
+                    ssh_connect(this.ip_address, this.ip_port, this.user, this.password);
+                    break;
+                case "web":
+                    web_connect(this.ip_address, this.ip_port);
+                    break;
+                case "smb":
+                    smb_connect(this.ip_address, this.ip_port, this.user, this.password);
+                    break;
+            }
+        } else {
+            System.exit(1);
         }
+
     }
 
 
