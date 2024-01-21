@@ -1,5 +1,5 @@
 package com.ilya.onlinegalery.onlinegalery;
-
+import java.util.Scanner;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,8 +18,13 @@ public class OnlineGalery extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
-
-
+//        launch();
+        Scanner _input = new Scanner(System.in);
+        String _method = _input.next();
+        String _ip_addres = _input.next();
+        int _port = _input.nextInt();
+        String _user = _input.next();
+        String _password = _input.next();
+        ConnectToServer connect = new ConnectToServer(_method, _ip_addres, _port, _user, _password);
     }
 }
