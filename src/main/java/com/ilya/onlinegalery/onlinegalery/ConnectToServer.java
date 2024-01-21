@@ -12,7 +12,8 @@ public class ConnectToServer {
     private String connect_method;
     private InetAddress ip_address;
     private int ip_port;
-    public ConnectToServer(String _connect_method, String _ip_address, int _port) {
+    private String user, password;
+    public ConnectToServer(String _connect_method, String _ip_address, int _port, String _user, String _password) {
         // assignment of variables when called
         this.connect_method = _connect_method;
         try {
@@ -22,37 +23,39 @@ public class ConnectToServer {
             e.printStackTrace();
         }
         this.ip_port = _port;
+        this.user = _user;
+        this.password = _password;
     }
 
     private void main(){
         switch (connect_method) {
             case "ftp":
-                ftp_connect(this.ip_address, this.ip_port);
+                ftp_connect(this.ip_address, this.ip_port, this.user, this.password);
             case "ssh":
-                ssh_connect(this.ip_address, this.ip_port);
+                ssh_connect(this.ip_address, this.ip_port, this.user, this.password);
             case "web":
                 web_connect(this.ip_address, this.ip_port);
             case "smb":
-                smb_connect(this.ip_address, this.ip_port);
+                smb_connect(this.ip_address, this.ip_port, this.user, this.password);
 
         }
     }
 
 
-    private void ftp_connect(InetAddress _ip_address, int _ip_port){
-        FTPConnect _server = new FTPConnect(_ip_address, _ip_port);
+    private void ftp_connect(InetAddress _ip_address, int _ip_port, String _user, String _password){
+        FTPConnect _server = new FTPConnect(_ip_address, _ip_port, _user, _password);
         _server.connect();
     }
-    private void ssh_connect(InetAddress _ip_address, int _ip_port){
-        SSHConect _server = new SSHConect(_ip_address, _ip_port);
+    private void ssh_connect(InetAddress _ip_address, int _ip_port, String _user, String _password){
+        SSHConect _server = new SSHConect(_ip_address, _ip_port, _user, _password);
         _server.connect();
     }
     private void web_connect(InetAddress _ip_address, int _ip_port){
         WEBConnect _server = new WEBConnect(_ip_address, _ip_port);
         _server.connect();
     }
-    private void smb_connect(InetAddress _ip_address, int _ip_port){
-        SMBConnect _server = new SMBConnect(_ip_address, _ip_port);
+    private void smb_connect(InetAddress _ip_address, int _ip_port, String _user, String _password){
+        SMBConnect _server = new SMBConnect(_ip_address, _ip_port, _user, _password);
         _server.connect();
     }
 }

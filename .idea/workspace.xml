@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1843d40a-ba1f-4ddf-9db8-3c238a4f6e6f" name="Changes" comment="Create ConnectToServer class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SMBConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SSHConect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/WEBConnect.java" afterDir="false" />
+    <list default="true" id="1843d40a-ba1f-4ddf-9db8-3c238a4f6e6f" name="Changes" comment="Creating Classes for connect methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SMBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SMBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SSHConect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SSHConect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705841470284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creating Classes for connect methods">
+      <option name="closed" value="true" />
+      <created>1705842797308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705842797308</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project and .fxml file for main scene" />
     <MESSAGE value="Create ConnectToServer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ConnectToServer class" />
+    <MESSAGE value="Creating Classes for connect methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Classes for connect methods" />
   </component>
 </project>

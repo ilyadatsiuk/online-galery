@@ -10,6 +10,7 @@ module com.ilya.onlinegalery.onlinegalery {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires org.apache.commons.net;
 
     opens com.ilya.onlinegalery.onlinegalery to javafx.fxml;
     exports com.ilya.onlinegalery.onlinegalery;
