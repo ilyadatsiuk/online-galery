@@ -15,7 +15,7 @@
    <Label text=" IP " />
    <TextField promptText="Write ip" />
    <Label text=" PORT " />
-   <TextField prefHeight="26.0" prefWidth="61.0" promptText="Write port" />
+   <TextField prefHeight="26.0" prefWidth="61.0" promptText="Port" />
    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="GO!" />
    <Separator maxWidth="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="18.0" prefWidth="0.0" />
    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-background-image: url('src/main/resources/com/ilya/onlinegalery/onlinegalery/img/setings.png');" />
