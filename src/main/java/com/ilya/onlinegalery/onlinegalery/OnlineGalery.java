@@ -30,8 +30,8 @@ public class OnlineGalery extends Application {
         String ipAddress = Controller.getIpAddressValue();
         String ipPort = Controller.getIpPortValue();
         int ipPortInt = (ipPort != null && !ipPort.isEmpty()) ? Integer.parseInt(ipPort) : 0;
-        String _user = "YOUR-USER";
-        String _password = "YOUR-PASSWORD";
+        String _user = "tv";
+        String _password = "123";
 
         System.out.print("Method: " + selectedMethod);
         System.out.print("IP: " + ipAddress);
