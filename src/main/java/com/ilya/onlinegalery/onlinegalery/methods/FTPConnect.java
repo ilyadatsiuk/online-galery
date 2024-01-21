@@ -31,7 +31,6 @@ public class FTPConnect {
                 System.out.println("Current directory: " + ftpClient.printWorkingDirectory());
                 ftpClient.enterLocalPassiveMode();
 
-                // Вивести всі зображення в поточному каталозі та його підкаталогах
                 listImagesRecursive(ftpClient, "/home/");
 
                 ftpClient.logout();
@@ -52,10 +51,8 @@ public class FTPConnect {
             for (FTPFile file : files) {
                 String fileName = file.getName();
                 if (file.isDirectory()) {
-                    // Рекурсивно викликати для підкаталога
                     listImagesRecursive(ftpClient, directory + "/" + fileName);
                 } else {
-                    // Перевірка чи файл є зображенням
                     if (isImageFile(fileName)) {
                         System.out.println(directory + "/" + fileName);
                     }
