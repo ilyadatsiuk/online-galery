@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1843d40a-ba1f-4ddf-9db8-3c238a4f6e6f" name="Changes" comment="Create project and .fxml file for main scene">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" afterDir="false" />
+    <list default="true" id="1843d40a-ba1f-4ddf-9db8-3c238a4f6e6f" name="Changes" comment="Create ConnectToServer class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/FTPConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SMBConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/SSHConect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/methods/WEBConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/OnlineGalery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/OnlineGalery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ilya/onlinegalery/onlinegalery/main-scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ilya/onlinegalery/onlinegalery/main-scene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilya/onlinegalery/onlinegalery/ConnectToServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,12 +118,30 @@
       <option name="project" value="LOCAL" />
       <updated>1705836976788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create ConnectToServer class">
+      <option name="closed" value="true" />
+      <created>1705841470284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705841470284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="45860bcb-3d8b-4ad3-88f4-71d0e57eecd1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="45860bcb-3d8b-4ad3-88f4-71d0e57eecd1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -144,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project and .fxml file for main scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create project and .fxml file for main scene" />
+    <MESSAGE value="Create ConnectToServer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create ConnectToServer class" />
   </component>
 </project>
