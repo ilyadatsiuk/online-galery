@@ -21,7 +21,13 @@
    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-background-image: url('src/main/resources/com/ilya/onlinegalery/onlinegalery/img/setings.png');" />
    <Pane prefHeight="374.0" prefWidth="598.0">
       <children>
-         <ScrollPane layoutX="2.0" layoutY="-1.0" prefHeight="374.0" prefWidth="598.0" />
+         <ScrollPane fx:id="labelOutput" layoutX="2.0" layoutY="-1.0" prefHeight="374.0" prefWidth="598.0" maxWidth="-Infinity" minHeight="-Infinity">
+            <content>
+               <!-- Ваш текст або інші елементи тут -->
+               <Label text="" />
+               <!-- Інші елементи -->
+            </content>
+         </ScrollPane>
       </children>
    </Pane>
 </FlowPane>

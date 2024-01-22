@@ -5,6 +5,8 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+
 
 public class Controller {
 
@@ -19,6 +21,9 @@ public class Controller {
 
     @FXML
     private Button goConnect;
+
+    @FXML
+    private static Label labelOutput;
 
 
 
@@ -57,5 +62,9 @@ public class Controller {
         selectedMethod = methodType.getValue();
         ipAddressValue = getIpAddress();
         ipPortValue = getIpPort();
+    }
+
+    public static void changeLabelOutputText(String _text){
+         labelOutput.setText(labelOutput.getText() + _text);
     }
 }
