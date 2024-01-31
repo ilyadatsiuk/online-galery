@@ -38,7 +38,7 @@ public class OnlineGalery extends Application {
         System.out.print("User: " + _user);
         System.out.print("Password: " + _password);
 
-        //Controller.changeLabelOutputText("Label");
+
         ConnectToServer connect = new ConnectToServer(selectedMethod, ipAddress, ipPortInt, _user, _password);
         connect.start();
     }
